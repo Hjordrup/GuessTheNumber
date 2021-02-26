@@ -11,7 +11,6 @@ public class GuessTheNumber {
 
     GuessTheNumber(){
         randomNum();
-        notifyNumObserver();
     }
 
 
@@ -25,6 +24,7 @@ public class GuessTheNumber {
 
     public void setNewNum() {
         this.num = r1.nextInt(101);
+        notifyNumObserver();
     }
 
 
